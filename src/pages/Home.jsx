@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useVideos } from "../hooks/useVideosFetch"
 import Sppiner from "../components/Sppiner";
-import SkeletonLoader from "../components/skeletonLoader";
+import SkeletonLoader from "../components/SkeletonLoader";
 import VideoLists from "../components/VideoLists";
 
 
