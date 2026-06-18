@@ -8,7 +8,7 @@ import { useState } from "react";
 import Modal from "./Modal";
 import Subscriptions from "./Subscriptions";
 import { createPortal } from "react-dom";
-import SubscriptionsOVer from "./subscriptionOver";
+import SubscriptionsOVer from "./SubscriptionOver";
 
 export default function LeftSideBar() {
   const [showSubscription ,setShowSubscription] = useState(false);
