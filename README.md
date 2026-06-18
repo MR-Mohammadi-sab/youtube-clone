@@ -32,4 +32,7 @@ A modern YouTube-inspired video streaming application built with **React**,  and
 ---
 
 
+## 🚀 Live Demo
+
+https://youtube-clone-eroc.vercel.app/
 
