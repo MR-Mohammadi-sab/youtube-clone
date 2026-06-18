@@ -36,7 +36,7 @@ export default function SearchResults() {
             <Link to={`/watch?v=${video.id.videoId}`} key={video.id.videoId}>
               <div
                 
-                className="max-w-6xl mx-auto flex flex-col sm:flex-row gap-4 p-2 rounded-lg dark:hover:bg-dark-hover hover:bg-bg-secondary transition cursor-pointer w-full"
+                className="max-w-6xl mx-auto flex flex-col sm:flex-row gap-4 p-2 rounded-lg dark:hover:bg-dark-hover text-gray-800 dark:text-gray-100 hover:bg-bg-secondary transition cursor-pointer w-full"
               >
                 {/* Thumbnail */}
               <div className="sm:w-125 w-full  h-80  bg-dark-card rounded-lg overflow-hidden">
@@ -51,22 +51,22 @@ export default function SearchResults() {
               <div className="flex-1">
 
                 {/* Title */}
-                <h3 className="text-dark-text text-base sm:text-lg font-medium line-clamp-2">
+                <h3 className="dark:text-dark-text text-gray-800 text-base sm:text-lg font-medium line-clamp-2">
                   {video.snippet.title}
                 </h3>
 
                 {/* Channel */}
-                <p className="text-dark-text-secondary text-sm mt-1">
+                <p className="dark:text-dark-text-secondary text-gray-800 text-sm mt-1">
                   {video.snippet.channelTitle}
                 </p>
 
                 {/* Meta */}
-                <p className="text-dark-text-secondary text-xs mt-1">
+                <p className="dark:text-dark-text-secondary text-gray-800 text-xs mt-1">
                   {video.snippet.viewCount} views • {video.snippet.publishedAt}
                 </p>
 
                 {/* Description */}
-                <p className="text-dark-text-secondary text-sm mt-2 line-clamp-2 hidden sm:block">
+                <p className="text-gray-800 dark:text-dark-text-secondary text-sm mt-2 line-clamp-2 hidden sm:block">
                   {video.snippet.description}
                 </p>
 

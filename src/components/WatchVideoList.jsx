@@ -33,8 +33,8 @@ export default function WatchVideoList() {
           <span className="absolute z-10000 top-19 left-31">{formatDuration(video.contentDetails.duration)}</span>
           </Link>
           
-          <div className="text-gray-400 flex flex-col  justify-center ml-2">
-        <h3 className="font-bold  line-clamp-2 text-xs text-white ">{video.snippet.title}</h3>
+          <div className="dark:text-gray-400 text-gray-800 flex flex-col  justify-center ml-2">
+        <h3 className="font-bold  line-clamp-2 text-xs dark:text-white ">{video.snippet.title}</h3>
           <p className="text-sm">{video.snippet.channelTitle}</p>
           <div className="flex gap-3 text-xs">
           <span>{converteViewtoK(video.statistics.viewCount)}</span> <span>•</span>

@@ -8,7 +8,7 @@ import converteViewtoK from "../utily/converteViewtoK";
 
 export default function VideoActions({like,comment}) {
   return (
-            <aside className="absolute -right-12 bottom-[20%] flex flex-col items-center gap-4 text-white z-50">
+            <aside className="absolute -right-12 bottom-[20%] flex flex-col items-center gap-4 dark:text-white z-50">
 
             
             <div className="flex flex-col items-center cursor-pointer hover:opacity-80  transition ">

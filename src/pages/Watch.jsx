@@ -71,7 +71,7 @@ export default function Watch() {
 
       {/* descirption */}
       <div>
-        <div className=" mt-10 bg-gray-400/15 hover:bg-gray-800/40 p-4 relative">
+        <div className=" mt-10 bg-bg-secondary dark:hover:bg-gray-800/40 hover:bg-gray-200 p-4 relative">
         <p><span>{converteViewtoK(data?.statistics?.viewCount)}</span> <span>{timeAgo(data?.snippet.publishedAt)}</span></p>
           <p className={`whitespace-pre-line   ${showMore && "line-clamp-3"}`}>{data?.snippet.description}</p>
            <button className={`cursor-pointer capitalize`} onClick={()=>setShowMore(p=>!p)}>{showMore?"more":"show less"}</button>

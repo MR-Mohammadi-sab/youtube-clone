@@ -13,6 +13,7 @@ import SearchResults from "./pages/SearchResults";
 import ShortVideos from "./pages/ShortVideos";
 import Watch from "./pages/Watch";
 import NotFountPage from "./pages/NotFountPage";
+import You from "./pages/You";
 
 
 
@@ -47,7 +48,8 @@ const router=createBrowserRouter([
       {path:"/results", element:<SearchResults />},]
   },
   
-  {path:"*", element:<NotFountPage />}
+  {path:"/you", element:<You />},
+  {path:"*", element:<NotFountPage />},
     ]
   },
 
