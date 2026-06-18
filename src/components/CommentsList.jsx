@@ -18,14 +18,14 @@ export default function CommentsList() {
 
     
   return (
-    <ul className="flex flex-col gap-8 mt-10">
+    <ul className="flex flex-col gap-8 mt-10 dark:text-white">
         {allComments.map((comment)=>
         <li key={comment.id} className="flex gap-2">
           <img src={comment?.snippet?.topLevelComment?.snippet.authorProfileImageUrl} alt={comment?.snippet?.topLevelComment?.snippet.authorDisplayName} className="w-12 h-12 rounded-full" />
           <div>
             <span>{comment?.snippet?.topLevelComment?.snippet.authorDisplayName}</span>
-            <span className="text-gray-400 ml-2">{timeAgo(comment?.snippet?.topLevelComment?.snippet.publishedAt)}</span>
-            <p className="text-gray-100">{comment?.snippet?.topLevelComment?.snippet.textDisplay}</p>
+            <span className="text-gray-200 dark:text-gray-400 ml-2">{timeAgo(comment?.snippet?.topLevelComment?.snippet.publishedAt)}</span>
+            <p className="dark:text-gray-100 text-gray-900">{comment?.snippet?.topLevelComment?.snippet.textDisplay}</p>
           </div>
           
     </li>)}
