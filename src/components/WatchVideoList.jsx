@@ -24,7 +24,7 @@ export default function WatchVideoList() {
       return () => observer.disconnect();
     }, [fetchNextPage, hasNextPage]);
   return (
-    <aside>
+    <aside className="hidden md:block">
     {videos?.map((video) => (
         <figure key={video.id} className="rounded-sm flex h-28 w-[95%] ">
            

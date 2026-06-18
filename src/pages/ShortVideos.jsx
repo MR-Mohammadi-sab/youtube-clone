@@ -51,7 +51,7 @@ export default function ShortVideos() {
   }
 
   return (
-    <section className="h-screen w-full overflow-y-scroll shortsScroll snap-y snap-mandatory dark:bg-black pt-30 bg-white">
+    <main className="h-screen w-full overflow-y-scroll shortsScroll snap-y snap-mandatory dark:bg-black pt-30 bg-white">
 
       {items.map((item) => (
         <div
@@ -80,6 +80,6 @@ export default function ShortVideos() {
           <Sppiner />
         </div>
       )}
-    </section>
+    </main>
   );
 }

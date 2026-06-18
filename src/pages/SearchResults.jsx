@@ -24,7 +24,7 @@ export default function SearchResults() {
     if(isPending) return <div className="h-screen my-auto w-16 mx-auto flex justify-center items-center"><Sppiner /></div>
 
   return (
-    <section className=" dark:bg-black dark:text-dark-text  min-h-screen " ref={rootRef}>
+    <main className=" dark:bg-black dark:text-dark-text  min-h-screen " ref={rootRef}>
       
       {/* Container */}
       <div className=" px-4 py-4  p-8">
@@ -80,6 +80,6 @@ export default function SearchResults() {
       </div>
       {isFetchingNextPage && <div className="h-12 w-32 mx-auto"><Sppiner /></div>}
       <div  ref={refElement} className="h-8"></div>
-    </section>
+    </main>
   );
 }

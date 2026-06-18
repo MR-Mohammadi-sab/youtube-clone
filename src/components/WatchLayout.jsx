@@ -17,7 +17,7 @@ export default function WatchLayout() {
             <Header />
         </div>
         
-        <main className="dark:text-white pt-18 px-6 grid grid-cols-[1fr_32rem] gap-4 overflow-hidden">
+        <main className="dark:text-white pt-18 md:px-6 px-2 grid grid-cols-[1fr_32rem] gap-4 overflow-hidden">
           <Outlet />
         </main>  
     </div>
