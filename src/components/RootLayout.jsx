@@ -10,9 +10,15 @@ export default function RootLayout() {
           if(localStorage.getItem("theme")) checkTheme=localStorage.getItem("theme")
           if(checkTheme==="dark"){
               document.documentElement.classList.add("dark")
-          }else{
+          }else if(checkTheme=="light"){
               document.documentElement.classList.remove("dark")
-          }        
+          }else {
+           if(window.matchMedia("(prefers-color-scheme:dark)").matches){
+               document.documentElement.classList.add("dark")
+           }else{
+            document.documentElement.classList.remove("dark")
+           }
+          }      
       },[])
       
        if(!navigator.onLine) return <NotInternetError />
