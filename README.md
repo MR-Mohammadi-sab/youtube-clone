@@ -2,7 +2,7 @@
 
 A modern YouTube-inspired video streaming application built with **React**,  and **Tailwind CSS**. Users can browse videos, search for content, view video details, and enjoy a responsive experience across all devices.
 
-![Project Preview](./public/preview.png)
+![Project Preview](./public/screenshow.png)
 
 ---
 
