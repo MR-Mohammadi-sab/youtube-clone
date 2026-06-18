@@ -7,9 +7,9 @@ export default function VideoLists({data}) {
   return (
     <>
          {data?.map((video) => (
-        <figure key={video.id} className="flex flex-col gap-2 rounded-sm relative dark:hover:bg-gray-800 p-3 min-w-62.5 overflow-hidden w-full mx-auto max-w-300 hover:bg-gray-200 text-black dark:text-white">
+        <figure key={video.id} className="flex flex-col gap-2 rounded-sm relative dark:hover:bg-gray-800 p-3 min-w-62.5 overflow-hidden w-full mx-auto max-w-300 hover:bg-gray-200 text-black dark:text-white ">
           <Link to={`/watch?v=${video.id}`}>
-          <img src={video.snippet.thumbnails.high.url} alt={video.snippet.title} className="w-full h-62.5 object-fill" referrerPolicy="no-referrer" />
+          <img src={video.snippet.thumbnails.high.url} alt={video.snippet.title} className="rounded-sm w-full h-62.5 object-fill" referrerPolicy="no-referrer" />
           <span className="absolute top-52  right-12">{formatDuration(video?.contentDetails?.duration)}</span>
           <div className="flex items-center gap-2">
           {video.channelAvatar && <img

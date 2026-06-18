@@ -21,12 +21,13 @@ export default function Watch() {
   
   return (
     <>
-    <div>
+    <div className="h-[80vh] rounded-md">
       <iframe
-      width="750"
-      height="450"
+      width="100%"
+      height="100%"
       src={`https://www.youtube.com/embed/${id}`}
       title="YouTube video"
+      className="rounded-md"
     ></iframe>
 
     <h1 className="font-bold mt-2 tracking-wide">{data?.snippet.title}</h1>

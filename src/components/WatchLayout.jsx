@@ -13,11 +13,11 @@ export default function WatchLayout() {
         <LeftSideNavbar />
       </Modal>}
 
-        <div className="grid grid-cols-[4rem_1fr] fixed top-0 right-0 left-0 bg-bg-secondary dark:bg-black opacity-95  p-2  z-1000">
+        <div className=" fixed top-0 right-0 left-0 bg-bg-secondary dark:bg-black opacity-95  p-2  z-1000">
             <Header />
         </div>
         
-        <main className="dark:text-white md:pt-18 pt-16 md:px-6 px-2 grid grid-cols-[1fr_32rem] gap-4 overflow-hidden">
+        <main className="dark:text-white md:pt-18 pt-16 md:px-6 px-2 grid md:grid-cols-[1fr_22rem] grid-cols-1 gap-4 overflow-hidden">
           <Outlet />
         </main>  
     </div>
