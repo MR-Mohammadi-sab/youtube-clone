@@ -30,7 +30,7 @@ const login = useGoogleLogin({
   return (
     <button
       onClick={login}
-      className="dark:bg-dark-card  border border-gray-400 dark:text-white cursor-pointer gap-0.5 rounded-full px-4 md:py-2   text-sm  font-semibold flex items-center justify-center hover:border-bg-secondary dark:hover:border-dark-hover  dark:hover:bg-dark-hover transition text-black bg-bg-secondary" 
+      className="dark:bg-dark-card  border border-gray-400 dark:text-white cursor-pointer gap-0.5 rounded-full md:px-4 py-2  px-2 text-sm  font-semibold flex items-center justify-center hover:border-bg-secondary dark:hover:border-dark-hover  dark:hover:bg-dark-hover transition text-black bg-bg-secondary" 
     >
       <FaRegCircleUser size={19} />
       Sign in
