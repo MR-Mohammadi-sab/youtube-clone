@@ -1,12 +1,15 @@
 import {  useState } from "react";
 import LeftSideBar from "../components/LeftSideBar";
 import Header from "../components/Header";
+import Modal from "../components/Modal";
+import LeftSideNavbar from "../components/LeftSideNavbar";
+import { useSideNav } from "../context/LeftSideNavBarProvider";
 
 export default function You() {
   const [user] = useState(()=>{
     if(localStorage.getItem("user")) return JSON.parse(localStorage.getItem("user"))
 });
-console.log(user);
+const {drop}=useSideNav()
 
     if(!user) return <div className="dark:text-white dark:bg-blackh-screen flex flex-col justify-center items-center">
         <p>You should Log in!</p>
@@ -14,6 +17,9 @@ console.log(user);
 
   return (
     <div className="flex min-h-screen bg-white dark:bg-[#0f0f0f] text-black dark:text-white">
+      {drop && <Modal>
+        <LeftSideNavbar />
+        </Modal>}
         <LeftSideBar />
       <div className="md:ml-24 ml-0">
         <div className="sticky top-0 opacity-95 dark:bg-black bg-bg-secondary">

@@ -1,9 +1,11 @@
-import { faAngleRight, faClock, faHistory, faList, faThumbsUp, faVideo} from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faClock, faHistory, faList, faThumbsUp, faUser, faVideo} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 
 
 const icons=[
+    {icon:faUser , name :"Your channel"},
     {icon:faHistory , name :"History"},
     {icon: faList , name :"Playlist"},
     {icon:faClock , name :"Watch later"},
@@ -21,11 +23,12 @@ const icons=[
         </div>
 
         <ul className="mt-4 pb-8">
-            
+            <Link to="/you" className="cursor-pointer">
             { icons.map((icon)=> <li key={icon.name} className="flex items-center  gap-4 mt-4">
                 <FontAwesomeIcon icon={icon.icon} size="lg" />
                 <span className="font-medium">{icon.name}</span>
                 </li>)}
+            </Link>
               
         </ul>
 
