@@ -13,8 +13,7 @@ export default function WatchLayout() {
         <LeftSideNavbar />
       </Modal>}
 
-        <div className="grid grid-cols-[4rem_1fr] fixed top-0 right-0 left-0 bg-bg-secondary dark:bg-black opacity-78  p-2  z-1000">
-            <HamburgerButton/>
+        <div className="grid grid-cols-[4rem_1fr] fixed top-0 right-0 left-0 bg-bg-secondary dark:bg-black opacity-95  p-2  z-1000">
             <Header />
         </div>
         

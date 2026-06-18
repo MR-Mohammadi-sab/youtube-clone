@@ -21,7 +21,7 @@ export default function Layout() {
           
         {/* for header and navbar */}
         <div className="flex-1 min-w-62.5 md:ml-20">
-        <div className="dark:bg-black bg-bg opacity-93  p-2  z-1000 sticky top-0"> 
+        <div className="dark:bg-black bg-bg opacity-95  p-2  z-1000 sticky top-0"> 
             <Header />
             <HomeNavbar />
         </div>  
