@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@layer components {
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply dark:bg-black/60 rounded-full w-2 h-2 bg-bg-secondary   ;
+  };
+  .swiper-button-next svg ,
+  .swiper-button-prev svg  {
+    width: 18px !important;
+    height: 18px !important;
+    @apply text-black
+    
+  };
+
+  .swiper-button-next svg path,
+  .swiper-button-prev svg path {
+    @apply dark:fill-white fill-black;
+  }
+}
+
+@theme{
+
+
+--color-btn-gray: #333;
+--breakpoint-md:790px;
+
+  --color-dark-bg: #0f0f0f;
+--color-dark-card: #181818;
+--color-dark-hover: #272727;
+--color-dark-border: #303030;
+--color-dark-text: #ffffff;
+--color-dark-text-secondary: #aaaaaa;
+
+--color-bg: #ffffff;
+--color-bg-secondary: #f0f0f9;
+--color-border: #e5e5e5;
+--color-text: #0f0f0f;
+--color-text-secondary: #181818;
+--breakpoint-xs:450px
+
+/* Text primary → #0F0F0F
+
+Text secondary → #606060 */
+
+}
+
+
+
+
+.leftSideNAvbar {
+  scrollbar-width: thin;            
+  scrollbar-color: transparent transparent;
+}
+.leftSideNAvbar:hover {
+  scrollbar-color: #525252 transparent;
+  
+}
+
+.shortsScroll{
+    scrollbar-width: thin; 
+      scrollbar-color: #525252 transparent;
+}
+
+
+
+
+#nprogress .bar {
+  background: #ff0000 !important; 
+  height: 3px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #ff0000, 0 0 5px #ff0000;
+}
+
+#nprogress .spinner {
+  display: none;
+}
+
