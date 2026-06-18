@@ -8,7 +8,7 @@ import { useSideNav } from "../context/LeftSideNavBarProvider";
 export default function WatchLayout() {
   const {drop}=useSideNav()
   return (
-    <div className="min-h-screen dark:bg-black bg-white w-full p-8">
+    <div className="min-h-screen dark:bg-black bg-white w-full md:p-8 p-2">
       {drop && <Modal>
         <LeftSideNavbar />
       </Modal>}
@@ -17,7 +17,7 @@ export default function WatchLayout() {
             <Header />
         </div>
         
-        <main className="dark:text-white pt-18 md:px-6 px-2 grid grid-cols-[1fr_32rem] gap-4 overflow-hidden">
+        <main className="dark:text-white md:pt-18 pt-16 md:px-6 px-2 grid grid-cols-[1fr_32rem] gap-4 overflow-hidden">
           <Outlet />
         </main>  
     </div>
