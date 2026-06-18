@@ -24,7 +24,7 @@ export default function CommentsList() {
           <img src={comment?.snippet?.topLevelComment?.snippet.authorProfileImageUrl} alt={comment?.snippet?.topLevelComment?.snippet.authorDisplayName} className="w-12 h-12 rounded-full" />
           <div>
             <span>{comment?.snippet?.topLevelComment?.snippet.authorDisplayName}</span>
-            <span className="text-gray-200 dark:text-gray-400 ml-2">{timeAgo(comment?.snippet?.topLevelComment?.snippet.publishedAt)}</span>
+            <span className="text-gray-600 dark:text-gray-400 ml-2">{timeAgo(comment?.snippet?.topLevelComment?.snippet.publishedAt)}</span>
             <p className="dark:text-gray-100 text-gray-900">{comment?.snippet?.topLevelComment?.snippet.textDisplay}</p>
           </div>
           
